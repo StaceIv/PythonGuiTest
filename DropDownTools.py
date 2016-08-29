@@ -23,4 +23,14 @@ editMenu = Menu(menu)
 menu.add_cascade(label="Edit", menu=editMenu)
 editMenu.add_command(label="Redo", command=doNothing)
 
+#TOOLBAR-------------------------------------
+
+toolbar = Frame(root, bg="blue")
+insertButton = Button(toolbar, text="Intert Image", command=doNothing)
+insertButton.pack(side=LEFT, padx=2, pady=2)
+printButton = Button(toolbar, text="Print", command=doNothing)
+printButton.pack(side=LEFT, padx=2, pady=2)
+
+toolbar.pack(side=TOP, fill=X)
+
 root.mainloop()
