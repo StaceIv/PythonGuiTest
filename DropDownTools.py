@@ -33,4 +33,9 @@ printButton.pack(side=LEFT, padx=2, pady=2)
 
 toolbar.pack(side=TOP, fill=X)
 
+#STATUS BAR ----------------------------------
+
+status = Label(root, text="Preparing to do nothing", bd=1, relief=SUNKEN, anchor=W)
+status.pack(side=BOTTOM, fill=X)
+
 root.mainloop()
